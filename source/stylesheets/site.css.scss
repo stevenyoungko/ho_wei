@@ -370,119 +370,86 @@ body {
         }
     }
     [data-anchor="slide2"] {
-        .subtitle {
-            @extend %subtitle-second-style;
-        }
-        .content {
-            @extend %content-basic-style;
-        }
-        .img-box {
-            @extend %img-box-basic-style;
-        }
-        .readmore {
-            @extend %readmore-basic-style;
-        }
-        .decoration {
-            @extend %decoration-basic-style;
-        }
-        .date {
-            @extend %date-basic-style;
-        }
         background-color: $c-white;
         height: 100%;
-
         .title {
-            @extend %title-basic-style;
+            font-weight: normal;            
+            font-size: 3.5rem;
             color: $c-brown;
-            text-shadow: none;
-            top: 0; 
+            display: inline-block;
+            margin-top: 0;            
+            margin-left: 11%;
         }
-        %subtitle-second-style {
-            @extend %subtitle-basic-style;
-            color: $c-brown;
-            top: 18%;
-            font-size: 1.5rem;
-            text-shadow: none;
-            font-weight: 400;
-        }
-        .subtitle-2 {
-            @extend %subtitle-basic-style;
-            @extend %subtitle-second-style;
-            left: 53%;
-        }
-        %content-basic-style {
-            text-shadow: none;
-            letter-spacing: 1px;
-            font-weight: 300;
-            font-size: 1.2rem;
-            color: $c-brown;
-            line-height: 25px;
-            width: 540px;
-            position: absolute;
-            left: 12.5%;
-            top: 23%;
-        }
-        .content-2 {
-            @extend %content-basic-style;
-            left: 53%;
-        }
-        %img-box-basic-style {
-            background-image: url(../images/Rectangle16Copy4.png);
-            position: absolute;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            height: 45%;
-            width: 38%;
-            left: 12.5%;
-            top: 43%;
-        }
-        .img-box-2 {
-            @extend  %img-box-basic-style;
-            background-image: url(../images/Rectangle16Copy5.png);
-            left: 53%;
-            top: 43%;     
-        }
-        %readmore-basic-style {
-            position: absolute;
-            top: 37%;
-            left: 43%;
-            color: $c-brown;
-            height: 3%;
-            width: 7%; 
-            font-size: 1.3rem;
-            text-align: center;
-        }
-        .readmore-2 {
-            @extend %readmore-basic-style;
-            left: 83.5%;
-        }
-        %decoration-basic-style {
-            position: absolute;
-            height: 0.2%;
-            width: 38%;
-            background-color: rgba(237,219,206,100);
-            top: 40.5%;
-            left: 12.5%;
-        }
-        .decoration-2 {
-            @extend %decoration-basic-style;
-            left: 53%;
-        }
-        %date-basic-style {
-            position: absolute;
-            left: 12.5%;
-            top: 16.5%;
-            color: $c-brown;
-            line-height: 30px;
-            font-size: 1rem;
-            font-weight: 300;
-        }
-        .date-2{
-            @extend %date-basic-style;
-            left: 53%;
+        .news-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0;
+
+            .column {
+                flex-basis: 40%;
+                min-height: 75vh;
+                padding: 20px;
+                border: 1px solid #000;
+                &.left {
+                    background-color: $c-white;
+                }
+                &.right {
+                    background-color: $c-white;
+                }
+                .basic-info {
+                    display: block;
+                    .date {
+                        color: $c-brown;
+                        line-height: 30px;
+                        font-size: 1rem;
+                        font-weight: 300;
+                        display: block;
+                        padding: 5px;
+                    }
+                    .title {
+                        color: $c-brown;
+                        font-size: 1.5rem;
+                        text-shadow: none;
+                        font-weight: 400;
+                        margin: 0;
+                        display: block;
+                        padding: 5px;
+                    }
+                }
+                .content {
+                    text-shadow: none;
+                    letter-spacing: 1px;
+                    font-weight: 300;
+                    font-size: 1.2rem;
+                    color: $c-brown;
+                    line-height: 25px;
+                    width: 540px;
+                }
+                .readmore {
+                    color: $c-brown;
+                    height: 3%;
+                    width: 100%;
+                    font-size: 1rem;
+                    padding-bottom: 0.5rem;
+                    border-bottom: 1px solid #000;
+                    text-align: right;
+                }
+                .img-box {
+                    background-image: url(../images/Rectangle16Copy4.png);
+                    position: absolute;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                    height: 55%;
+                    width: 100%;
+                    left: 0;
+                    top: 42%;
+                }
+            }
         }
     }
+    
     [data-anchor="slide3"] {
         background-color: $c-white;
         height: 100%;

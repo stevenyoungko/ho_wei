@@ -6,26 +6,10 @@ title: 美食、酒器
     <%= partial 'first_page' %>
     <%= partial 'second_page' %>
     <%= partial 'third_page' %>
-    <%= partial 'fourth_page' %> 
-    <div class="section" data-anchor="fifthPage">
-      <h1 style=color:rgba(81,58,36,100);text-shadow:none;top:0px;font-size:40px;>Lnquiry</h1>
-      <div class="emptybox">
-        <div class="emptybox-inner"></div>
-      </div>
-      <div class="u-p5-1">
-         <p>詢價單目前是空的</p>       
-      </div>
-      <div class="decoration5"></div>
-      <div class="btn">
-        <div class="btn-inner">挑選去</div>
-      </div>  
-    </div>
-    <div class="section" data-anchor="sixthPage">Some section6</div>
-    <div class="section" data-anchor="seventhPage">Some section7</div>
-
-    
+    <%= partial 'fourth_page' %>
+    <%= partial 'fifth_page' %>
+    <%= partial 'sixth_page' %>
   </div>
-
   <ul id="js-Menu" class="side-nav">
     <li data-menuanchor="firstPage" class="active">
       <a class="side-nav__item u-margin--top " href="#firstPage"><span>Top</span></a>
@@ -52,16 +36,26 @@ title: 美食、酒器
       <div class="decoration1"></div>
       <div class="decoration2"></div>
       <a href="#" class="icon-btn">
-	  	  <i class="icon fab fa-facebook-square"></i>
+	  	  <i class="icon icon-fb"></i>
 	  	</a>
 	  	<a href="#" class="icon-btn">
-	  	  <i class="icon fab fa-instagram"></i>
+	  	  <i class="icon icon-ig"></i>
 	  	</a>
 	  	<a href="#" class="icon-btn">
-	  	  <i class="icon fab fa-twitter-square"></i>
+	  	  <i class="icon icon-tw"></i>
 	  	</a>
     </div>
   </ul>
-  
-  
+  <footer class="footer">
+    <div class="logo">
+      <a href="#"></a>
+    </div>
+    <p class="content">未滿18歲禁止飲酒 喝酒不開車 安全有保障</p>
+  </footer>   
 </div>
+
+<%= partial 'order-form' %>
+<%= partial 'order-form-send-out' %>
+<%= partial 'order-contact' %>
+<%= partial 'order-contact-send-out' %>
+<%= partial 'order-lnquiry-form' %>

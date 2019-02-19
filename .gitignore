@@ -4,3 +4,4 @@
 .sass-cache
 build/
 source/index.html.erb
+source/_first_page.html.erb
